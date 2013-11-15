@@ -1,0 +1,22 @@
+{
+    "name": "aamant/faker-extend",
+    "description": "Valid address provider for Faker",
+    "keywords": ["faker", "fixtures", "data"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arnaud Amant",
+            "email": "arnaud.amant@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "fzaninotto/faker": "1.2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Aamant\\FakerExtend": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
