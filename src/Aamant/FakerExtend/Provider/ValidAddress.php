@@ -1020,7 +1020,7 @@ class ValidAddress extends \Faker\Provider\Base
 
 		$this->used[] = $this->current = $current;
 
-		return $this;
+		return $this->generator;
 	}
 
 	protected function get($key)
@@ -1036,18 +1036,28 @@ class ValidAddress extends \Faker\Provider\Base
 		$this->current = null;
 	}
 
-	public function street()
+	public function vstreet()
 	{
 		return $this->get('street');
 	}
 
-	public function postcode()
+	public function vpostcode()
 	{
 		return $this->get('postcode');
 	}
 
-	public function city()
+	public function vcity()
 	{
 		return $this->get('city');
+	}
+
+	public function vlatitude()
+	{
+		return $this->get('latitude');
+	}
+
+	public function vlongitude()
+	{
+		return $this->get('longitude');
 	}
 }
