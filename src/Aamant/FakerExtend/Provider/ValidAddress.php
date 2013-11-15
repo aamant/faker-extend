@@ -1043,7 +1043,7 @@ class ValidAddress extends \Faker\Provider\Base
 
 	public function vpostcode()
 	{
-		return $this->get('postcode');
+		return $this->get('zipcode');
 	}
 
 	public function vcity()
